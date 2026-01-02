@@ -7,7 +7,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_FUNCTIONAPP_NAME: 'YOUR_FUNC_APP_NAME'  # Replace with your function app name
+  AZURE_FUNCTIONAPP_NAME: 'func-demo-767341308'  # Replace with your function app name
   AZURE_FUNCTIONAPP_PACKAGE_PATH: '.'
   PYTHON_VERSION: '3.11'
 
