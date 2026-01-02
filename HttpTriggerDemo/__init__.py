@@ -4,10 +4,14 @@ import logging
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('HTTP trigger function processed a request.')
-
-   
-    
-  if name:
+    name =req.params.get('name')
+    if not name
+      try 
+        req_body = req.get_json()
+        name = req_body.get('name')
+except ValueError:     
+     pass 
+if name:
         response_data = {
             "message": f"Hello, {name}! Welcome to Azure Serverless Functions! 🚀",
             "status": "success",
